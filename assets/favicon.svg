@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="10" fill="#0a0a0a"/>
+  <!-- "S" letter -->
+  <text
+    x="10"
+    y="46"
+    font-family="Arial Black, sans-serif"
+    font-weight="900"
+    font-size="38"
+    fill="#f0ede8"
+    letter-spacing="-2"
+  >SO</text>
+  <!-- Red accent dot -->
+  <circle cx="56" cy="46" r="5" fill="#ff2a2a"/>
+</svg>

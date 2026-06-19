@@ -1,0 +1,887 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Alex Rivera — Creative Designer & Visual Artist. Crafting bold digital experiences that inspire and connect." />
+  <title>SOLD OUT — STUDIO</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon / Tab Logo -->
+  <link rel="icon" type="image/svg+xml" href="/portfolio-site/assets/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="/portfolio-site/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/portfolio-site/assets/favicon.svg" />
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <a href="#hero" class="nav__logo-link">SOLDOUT<span class="accent">.</span></a>
+    </div>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">THE METHOD</a></li>
+      <li><a href="#work" class="nav__link">THE EVIDENCE</a></li>
+      <li><a href="#services" class="nav__link">THE ECOSYSTEM</a></li>
+      <li><a href="#videos" class="nav__link">THE VAULT</a></li>
+      <li><a href="#pricing" class="nav__link">INVESTMENT</a></li>
+      <li><a href="#contact" class="nav__link">TALK BUSINESS</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#about" class="mobile-menu__link" data-close-menu>About</a></li>
+      <li><a href="#work" class="mobile-menu__link" data-close-menu>Work</a></li>
+      <li><a href="#services" class="mobile-menu__link" data-close-menu>Services</a></li>
+      <li><a href="#videos" class="mobile-menu__link" data-close-menu>Videos</a></li>
+      <li><a href="#pricing" class="mobile-menu__link" data-close-menu>Investment</a></li>
+      <li><a href="#contact" class="mobile-menu__link" data-close-menu>Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+
+    <!-- Background Video (place your video file in /portfolio-site/assets/hero-bg.mp4) -->
+    <video class="hero__video" id="heroBgVideo" autoplay muted loop playsinline
+      poster="/portfolio-site/assets/hero-poster.jpg">
+      <source src="/portfolio-site/assets/hero-bg.mp4" type="video/mp4" />
+      <source src="/portfolio-site/assets/hero-bg.webm" type="video/webm" />
+    </video>
+    <div class="hero__noise"></div>
+    <div class="hero__video-overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Creative Partner for Nightlife &amp; F&B</p>
+      <h1 class="hero__name reveal">SOLD<br /><span class="accent">OUT</span></h1>
+      <p class="hero__tagline reveal">We turn empty tables<br />into sold-out night.</p>
+      <div class="hero__cta reveal">
+        <a href="#work" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- â”€â”€â”€ SOLD-OUT BLUEPRINT â”€â”€â”€ -->
+  <section class="blueprint section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01 / THE METHOD</span>
+        <h2 class="section-title">THE SOLD-OUT<br /><span class="accent">BLUEPRINT</span></h2>
+        <p class="blueprint__sub">Our strategic 3-step visual system designed to command the 1% attention and engineer
+          legendary, sold-out nights.</p>
+      </div>
+
+      <!-- Roadmap track -->
+      <div class="blueprint__track" aria-hidden="true">
+        <div class="blueprint__track-line"></div>
+        <div class="blueprint__track-dot blueprint__track-dot--1"></div>
+        <div class="blueprint__track-dot blueprint__track-dot--2"></div>
+        <div class="blueprint__track-dot blueprint__track-dot--3"></div>
+      </div>
+
+      <!-- Cards -->
+      <div class="blueprint__grid">
+
+        <!-- Card 1 â€” The Hook -->
+        <div class="blueprint-card reveal" style="--card-delay: 0ms">
+          <div class="blueprint-card__step">01</div>
+          <div class="blueprint-card__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 8C8 8 6 20 20 20C34 20 32 8 32 8" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+              <path d="M8 8V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M32 8V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M20 20V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-dasharray="3 3" />
+              <circle cx="20" cy="34" r="2.5" fill="currentColor" />
+              <path d="M14 5L10 2M26 5L30 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="blueprint-card__title">THE HOOK.</h3>
+          <p class="blueprint-card__copy">Scroll-stopping motion visuals engineered to hijack attention.</p>
+          <div class="blueprint-card__glow" aria-hidden="true"></div>
+        </div>
+
+        <!-- Card 2 â€” The Ego Flex -->
+        <div class="blueprint-card reveal" style="--card-delay: 160ms">
+          <div class="blueprint-card__step">02</div>
+          <div class="blueprint-card__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 30H34" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <path d="M8 30L4 14L14 22L20 8L26 22L36 14L32 30" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="20" cy="8" r="2.5" fill="currentColor" />
+              <circle cx="4" cy="14" r="2" fill="currentColor" />
+              <circle cx="36" cy="14" r="2" fill="currentColor" />
+            </svg>
+          </div>
+          <h3 class="blueprint-card__title">THE EGO FLEX.</h3>
+          <p class="blueprint-card__copy">High-end aesthetic positioning that triggers VIP FOMO.</p>
+          <div class="blueprint-card__glow" aria-hidden="true"></div>
+        </div>
+
+        <!-- Card 3 â€” The Takeover -->
+        <div class="blueprint-card reveal" style="--card-delay: 320ms">
+          <div class="blueprint-card__step">03</div>
+          <div class="blueprint-card__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 6C20 6 28 14 28 22C28 26.418 24.418 30 20 30C15.582 30 12 26.418 12 22C12 18 14 16 14 16C14 16 14 20 18 20C18 20 16 14 20 6Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20 30C20 30 17 28 17 25C17 23.343 18.343 22 20 22C21.657 22 23 23.343 23 25C23 28 20 30 20 30Z"
+                fill="currentColor" opacity="0.6" />
+              <path d="M12 34H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="blueprint-card__title">THE TAKEOVER.</h3>
+          <p class="blueprint-card__copy">Messages flood in. Tables sell out. Pure nightlife dominance.</p>
+          <div class="blueprint-card__glow" aria-hidden="true"></div>
+        </div>
+
+      </div><!-- /.blueprint__grid -->
+
+      <div class="blueprint__cta reveal">
+        <a href="#work" class="btn btn--primary" id="blueprint-cta-btn">SEE THE BLUEPRINT IN ACTION</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── WORK ─── -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02 / THE EVIDENCE</span>
+        <h2 class="section-title">The Sold-Out Archives</h2>
+      </div>
+      <div class="work__grid">
+
+        <article class="project-card reveal" data-project="0" tabindex="0" role="button"
+          aria-label="View Luminary Brand Identity project">
+          <div class="project-card__image-wrap">
+            <img src="./assets/G-fatt.webp" alt="Luminary Brand Identity" class="project-card__image" loading="eager"
+              decoding="async" width="600" height="400" />
+            <div class="project-card__overlay">
+              <span class="project-card__category">Motion Flyer</span>
+              <h3 class="project-card__title">G-Fatt: The Urban Riot</h3>
+              <span class="project-card__cta">View Project ↗</span>
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__status">Sold Out</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="1" tabindex="0" role="button"
+          aria-label="View Nexus App UI project">
+          <div class="project-card__image-wrap">
+            <img src="assets/activeHype.webp" alt="Nexus App UI Design" class="project-card__image" loading="eager"
+              decoding="async" width="600" height="400" />
+            <div class="project-card__overlay">
+              <span class="project-card__category">Cinematic Hype Video</span>
+              <h3 class="project-card__title">The Cyberpunk Hype</h3>
+              <span class="project-card__cta">View Project ↗</span>
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__status">Sold Out</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--wide reveal" data-project="2" tabindex="0" role="button"
+          aria-label="View Drift Editorial Campaign project">
+          <div class="project-card__image-wrap">
+            <img src="assets/snareUG.webp" alt="Drift Editorial Campaign" class="project-card__image" loading="eager"
+              decoding="async" width="800" height="400" />
+            <div class="project-card__overlay">
+              <span class="project-card__category">Motion Flyer/Event Promo</span>
+              <h3 class="project-card__title">SNARE: The Underground Arena</h3>
+              <span class="project-card__cta">View Project ↗</span>
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__status">Sold Out</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="3" tabindex="0" role="button"
+          aria-label="View Aurelia 3D Motion project">
+          <div class="project-card__image-wrap">
+            <img src="assets/SnareHipHop.webp" alt="Aurelia 3D Motion" class="project-card__image" loading="eager"
+              decoding="async" width="600" height="400" />
+            <div class="project-card__overlay">
+              <span class="project-card__category">Motion Flyer/Event Promo</span>
+              <h3 class="project-card__title">SNARE: The West Coast Bounce</h3>
+              <span class="project-card__cta">View Project ↗</span>
+            </div>
+          </div>
+          <div class="project-card__meta">
+            <span class="project-card__status">Sold Out</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="4" tabindex="0" role="button"
+          aria-label="View Solstice Web Design project">
+          <div class="project-card__image-wrap">
+            <img src="assets/aura.webp" alt="Solstice Web Experience" class="project-card__image" loading="eager"
+              decoding="async" width="600" height="400" />
+            <div class="project-card__overlay">
+              <span class="project-card__category">Festival Promo</span>
+              <h3 class="project-card__title">AURA: The Festival Mainstage</h3>
+              <span class="project-card__cta">View Project ↗</span>
+            </div>
+          </div>
+          <div class="project-card__meta">
+            <span class="project-card__status">Completed</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="5" tabindex="0" role="button"
+          aria-label="View Solstice Web Design project">
+          <div class="project-card__image-wrap">
+            <img src="assets/popo.webp" alt="Solstice Web Experience" class="project-card__image" loading="eager"
+              decoding="async" width="600" height="400" />
+            <div class="project-card__overlay">
+              <span class="project-card__category">Festival Promo</span>
+              <h3 class="project-card__title">PO PO: The VIP Takeover</h3>
+              <span class="project-card__cta">View Project ↗</span>
+            </div>
+          </div>
+          <div class="project-card__meta">
+            <span class="project-card__status">Completed</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECT MODAL ─── -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__panel">
+      <button class="modal__close" id="modalClose" aria-label="Close project modal">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="modal__content" id="modalContent">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03 / THE ECOSYSTEM</span>
+        <h2 class="section-title">The Sold-Out System</h2>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="4" y="4" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+              <rect x="18" y="4" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+              <rect x="4" y="18" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="23" cy="23" r="5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Cinematic Motion Flyers</h3>
+          <p class="service-card__desc">High-impact, beat-synced motion graphics that demand attention. We turn static
+            posters into scroll-stopping, 2.5D visual experiences engineered to sell tickets.</p>
+          <!--<span class="service-card__price">Custom Investment</span>-->
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="3" y="6" width="26" height="18" rx="3" stroke="currentColor" stroke-width="1.5" />
+              <path d="M11 28h10M16 24v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M9 14l4 4 10-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">High-Octane Hype Videos</h3>
+          <p class="service-card__desc">Ego-boosting event recaps designed to drive future VIP sales. Cyberpunk edits,
+            rapid frame-cuts, and pure adrenaline that make your venue look legendary.</p>
+          <!--<span class="service-card__price">Custom Investment</span>-->
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5" />
+              <path d="M16 4v24M4 16h24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M8 8c2 4 6 6 8 8-2 2-6 4-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Premium Event Branding</h3>
+          <p class="service-card__desc">Gritty, high-end visual identities for elite nightlife venues. From underground
+            hip-hop aesthetics to luxury VIP lounges, we design commanding layouts that speak power.</p>
+          <!--<span class="service-card__price">Custom Investment</span>-->
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M6 26l8-20 8 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M9.5 18h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <circle cx="24" cy="10" r="4" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Artist Visual Identity</h3>
+          <p class="service-card__desc">Custom promotional assets built for maximum stage presence. We craft the
+            aggressive, ego-driven aesthetics and intro videos that top-tier DJs and performers demand.</p>
+          <!--<span class="service-card__price">Custom Investment</span>-->
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M4 8h16l8 8-8 8H4l8-8-8-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Immersive VJ Loops</h3>
+          <p class="service-card__desc">Custom, beat-driven visuals tailored for massive LED screens. Elevate the stage
+            energy with hypnotic, high-BPM animations that synchronize perfectly with the crowd's vibe.</p>
+          <!--<span class="service-card__price">Custom Investment</span>-->
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M4 28V12l12-8 12 8v16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <rect x="12" y="18" width="8" height="10" rx="1" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="16" cy="11" r="3" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3 class="service-card__title">Visual Marketing Strategy</h3>
+          <p class="service-card__desc">Complete social media takeovers designed with one ruthless goal: selling out
+            tables. A cohesive, premium visual rollout that turns online hype into real-world profit.</p>
+          <!--<span class="service-card__price">Custom Investment</span>-->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VIDEO SHOWCASE ─── -->
+  <section class="videos section" id="videos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04 / THE VAULT</span>
+        <h2 class="section-title">Cinematic<span class="accent">Takeover</span></h2>
+      </div>
+      <div class="videos__grid">
+
+        <!-- Card 1 -->
+        <div class="video-card reveal" data-video-type="youtube"
+          data-video-src="https://youtu.be/QvTZqzz3Qyw?si=6lOTvb0pBuaCqng6" data-video-title="G-Fatt : The Urban Riot"
+          id="video-card-0">
+          <div class="video-card__thumb-wrap">
+            <img src="assets/G-fatt.webp" alt="Luminary Brand Film" class="video-card__thumb" loading="eager"
+              decoding="async" width="480" height="270" />
+            <div class="video-card__overlay">
+              <button class="video-card__play" aria-label="Play Luminary Brand Film">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <span class="video-card__tag">Motion Flyer</span>
+            <h3 class="video-card__title">G-Fatt: The Urban Riot</h3>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="video-card reveal" data-video-type="youtube"
+          data-video-src="https://youtu.be/QvTZqzz3Qyw?si=6lOTvb0pBuaCqng6" data-video-title="The Cyberpunk Hype"
+          id="video-card-1">
+          <div class="video-card__thumb-wrap">
+            <img src="assets/activeHype.webp" alt="Nexus Motion Graphics" class="video-card__thumb" loading="eager"
+              decoding="async" width="480" height="270" />
+            <div class="video-card__overlay">
+              <button class="video-card__play" aria-label="Play Nexus Motion Graphics">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <span class="video-card__tag">Cinematic Hype Video</span>
+            <h3 class="video-card__title">The Cyberpunk Hype</h3>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="video-card reveal" data-video-type="youtube"
+          data-video-src="https://youtu.be/Y4KuUm5B6rU?si=13jS5rLOOqC03mRf"
+          data-video-title="Snare: The underground Arena" id="video-card-2">
+          <div class="video-card__thumb-wrap">
+            <img src="assets/snareUG.webp" alt="Drift Editorial BTS" class="video-card__thumb" loading="eager"
+              decoding="async" width="480" height="270" />
+            <div class="video-card__overlay">
+              <button class="video-card__play" aria-label="Play Drift Editorial BTS">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <span class="video-card__tag">Motion Flyer/Event Promo</span>
+            <h3 class="video-card__title">Snare: The underground Arena</h3>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="video-card reveal" data-video-type="youtube"
+          data-video-src="https://youtu.be/Y4KuUm5B6rU?si=13jS5rLOOqC03mRf"
+          data-video-title="Snare: The West Coast Bounce" id="video-card-3">
+          <div class="video-card__thumb-wrap">
+            <img src="assets/SnareHipHop.webp" alt="Aurelia 3D Product" class="video-card__thumb" loading="eager"
+              decoding="async" width="480" height="270" />
+            <div class="video-card__overlay">
+              <button class="video-card__play" aria-label="Play Aurelia 3D Product">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <span class="video-card__tag">Motion Flyer/ Event Promo</span>
+            <h3 class="video-card__title">Snare: The West Coast Bounce</h3>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="video-card reveal" data-video-type="youtube"
+          data-video-src="https://youtu.be/Y4KuUm5B6rU?si=13jS5rLOOqC03mRf" data-video-title="AURA — Festival Mainstage"
+          id="video-card-4">
+          <div class="video-card__thumb-wrap">
+            <img src="assets/aura.webp" alt="Solstice Showreel" class="video-card__thumb" loading="eager"
+              decoding="async" width="480" height="270" />
+            <div class="video-card__overlay">
+              <button class="video-card__play" aria-label="Play Solstice Showreel">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <span class="video-card__tag">Festival Promo</span>
+            <h3 class="video-card__title">AURA — Festival Mainstage</h3>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="video-card reveal" data-video-type="youtube"
+          data-video-src="https://youtu.be/Y4KuUm5B6rU?si=13jS5rLOOqC03mRf" data-video-title="PO PO — VIP Takeover"
+          id="video-card-5">
+          <div class="video-card__thumb-wrap">
+            <img src="assets/popo.webp" alt="Generative Art Loop" class="video-card__thumb" loading="eager"
+              decoding="async" width="480" height="270" />
+            <div class="video-card__overlay">
+              <button class="video-card__play" aria-label="Play Generative Art Loop">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <span class="video-card__tag">Motion Flyer</span>
+            <h3 class="video-card__title">PO PO — VIP Takeover</h3>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ─── -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">05 / Investment</span>
+        <h2 class="section-title">Invest in a Sold-Out<br /><span class="accent">Night</span></h2>
+        <p class="pricing__subtitle">High-end visuals. Ruthless ROI.</p>
+      </div>
+      <div class="pricing__grid">
+
+        <!-- Basic -->
+        <div class="pricing-card reveal">
+          <div class="pricing-card__header">
+            <span class="pricing-card__plan">ESSENTIAL SETUP</span>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">9 lakhs</span>
+              <span class="pricing-card__period">/ Month</span>
+            </div>
+            <p class="pricing-card__tagline">Perfect for venues that need an immediate visual upgrade and standard
+              street cred.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              2 Cinematic Core Vibe Videos
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              2 Vertical Reels/TikTok Formats
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              4 Event Motion Flyers / Carousels
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              One-Time Page Profile Makeover
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              "Fill-in-the-Blanks" Caption Templates
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost pricing-card__cta">Get Started</a>
+        </div>
+
+        <!-- Standard (Featured) -->
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__header">
+            <span class="pricing-card__plan">SOLDOUT SIGNATURE</span>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">15 Lakhs</span>
+              <span class="pricing-card__period">/ Month</span>
+            </div>
+            <p class="pricing-card__tagline">The full marketing ecosystem engineered to pack VIP tables and build
+              extreme FOMO.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              2 Luxury Cinematic (OR) 2 High-End Motion Flyers.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              2 High-Energy Hype videos + 2 Recap Videos.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              4 Vertical Teasers + 5 Campaign Photos.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Monthly "Sold Out" Content Calendar.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              "Done-For-You" Copywriting & Hashtags.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Targeted Ad Strategy & Competitor Analysis.
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary pricing-card__cta">BOOK THE NIGHT</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card reveal">
+          <div class="pricing-card__header">
+            <span class="pricing-card__plan">MONOPOLY PARTNER</span>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">28 Lakhs</span>
+              <span class="pricing-card__period">/ Month</span>
+            </div>
+            <p class="pricing-card__tagline">Absolute visual dominance and VIP system setup. You do nothing; we take
+              over.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              8 Premium Master Videos + 8 Teasers.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              10 High-End Campaign Photos.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Direct DJ/Model Booking (Agency Rate).
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Full Page Management & Theme Moodboards.
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              24/7 VIP Concierge AI Chatbot Setup
+            </li>
+            <li class="pricing-card__feature">
+              <svg class="pricing-card__check" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.2" />
+                <path d="M5.5 9l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              VIP Data & Relationship System.
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost pricing-card__cta">Claim Monopoly</a>
+        </div>
+
+      </div>
+      <p class="pricing__note reveal">Need something custom? <a href="#contact" class="pricing__note-link">Let's
+          talk</a> — most projects are unique, and so are my quotes.</p>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">06 / TALK BUSINESS</span>
+        <h2 class="section-title">Build the Hype.<br /><span class="accent"> Sell Out the Tables.</span></h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <p class="contact__desc">Ready to pack your VIP tables? I don’t just design visuals; I engineer sold-out
+            nights. Drop me a message, and let's build your next undeniable campaign.</p>
+          <div class="contact__links">
+            <a href="mailto:soldout-studio@gmail.com" class="contact__link" id="contact-email">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+              sold-out-studio@gmail.com
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@sold-out-studio" target="_blank" rel="noopener noreferrer"
+              class="contact__link" id="contact-tiktok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5
+                  2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01
+                  a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34
+                  6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z" />
+              </svg>
+              sold-out-studio
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/@sold-out-studio" target="_blank" rel="noopener noreferrer"
+              class="contact__link" id="contact-youtube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 7s-.27-1.88-1.09-2.71c-1.04-1.09-2.2-1.1-2.73-1.16C16.36 3 12 3 12 3
+                  s-4.36 0-7.18.13c-.53.06-1.69.07-2.73 1.16C1.27 5.12 1 7 1 7S.73 9.12.73 11.25v2
+                  c0 2.12.27 4.25.27 4.25s.27 1.88 1.09 2.71c1.04 1.09 2.41 1.05 3.02 1.17
+                  C7.27 21.57 12 21.6 12 21.6s4.36-.01 7.18-.22c.53-.06 1.69-.08 2.73-1.17
+                  .82-.83 1.09-2.71 1.09-2.71S23.27 15.37 23.27 13.25v-2C23.27 9.12 23 7 23 7z
+                  M9.73 15.5v-7l6.54 3.51-6.54 3.49z" />
+              </svg>
+              sold-out-studio
+            </a>
+
+            <!-- Telegram -->
+            <a href="https://t.me/Sold_Out_Studio" target="_blank" rel="noopener noreferrer" class="contact__link"
+              id="contact-telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0
+                  a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325
+                  c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23
+                  -.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21
+                  .258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249
+                  -.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241
+                  -1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663
+                  3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+              </svg>
+              sold_out_studio
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="formName" class="form-label">Name</label>
+            <input type="text" id="formName" name="name" class="form-input" placeholder="Your full name" required
+              autocomplete="name" />
+            <span class="form-error" id="nameError">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label for="formEmail" class="form-label">Email</label>
+            <input type="email" id="formEmail" name="email" class="form-input" placeholder="your@email.com" required
+              autocomplete="email" />
+            <span class="form-error" id="emailError">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label for="formMessage" class="form-label">Message</label>
+            <textarea id="formMessage" name="message" class="form-input form-textarea"
+              placeholder="Tell me about your project..." rows="5" required></textarea>
+            <span class="form-error" id="messageError">Please enter a message.</span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            <span class="btn__text">Send Message</span>
+            <span class="btn__icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M2 9h14M10 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+              <path d="M7 12l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Message sent! I'll be in touch soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Sold-Out Studio. All rights reserved.</p>
+        <!--<p class="footer__made">Made with <span class="accent">♥</span> &amp; lots of coffee.</p>-->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- ─── VIDEO LIGHTBOX MODAL ─── -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="video-modal__backdrop" id="videoModalBackdrop"></div>
+    <div class="video-modal__panel">
+      <button class="video-modal__close" id="videoModalClose" aria-label="Close video">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="video-modal__player" id="videoModalPlayer">
+        <!-- Iframe or <video> injected by JS -->
+      </div>
+      <p class="video-modal__title" id="videoModalTitle"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
